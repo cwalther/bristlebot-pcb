@@ -1448,19 +1448,6 @@ grid 5.08 mm, diameter 10.5 mm</description>
 <text x="-3.1242" y="-3.2258" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.143" x2="0.889" y2="1.143" layer="21"/>
 </package>
-<package name="0207/5V">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-type 0207, grid 5 mm</description>
-<wire x1="-2.54" y1="0" x2="-0.889" y2="0" width="0.6096" layer="51"/>
-<wire x1="-0.762" y1="0" x2="0.762" y2="0" width="0.6096" layer="21"/>
-<wire x1="0.889" y1="0" x2="2.54" y2="0" width="0.6096" layer="51"/>
-<circle x="-2.54" y="0" radius="1.27" width="0.1016" layer="21"/>
-<circle x="-2.54" y="0" radius="1.016" width="0.1524" layer="51"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.143" y="0.889" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.143" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="0207/7">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 type 0207, grid 7.5 mm</description>
@@ -2023,6 +2010,33 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DO35Z6">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 6.35mm</description>
+<wire x1="3.175" y1="0" x2="2.286" y2="0" width="0.508" layer="51"/>
+<wire x1="-3.175" y1="0" x2="-2.286" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-3.175" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="A" x="3.175" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="-2.286" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -2213,11 +2227,11 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <element name="PAD3" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="41.81" y="1.42"/>
 <element name="PAD4" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="44.35" y="1.42"/>
 <element name="R1" library="resistor" package="0207/7" value="" x="13.97" y="6.5" rot="R270"/>
-<element name="R2" library="resistor" package="0207/5V" value="" x="21.59" y="7.77" rot="R90"/>
+<element name="R2" library="resistor" package="0207/7" value="" x="23.495" y="6.5"/>
 <element name="C2" library="resistor" package="C1206" value="" x="13.97" y="5.865" rot="MR270"/>
-<element name="IC1" library="adafruit" package="TO92-INLINE" value="" x="17.78" y="6.5" rot="R90"/>
-<element name="LED1" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="9.675" rot="R270"/>
-<element name="LED2" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="3.325" rot="R270"/>
+<element name="IC1" library="adafruit" package="TO92-INLINE" value="" x="17.145" y="6.5" rot="R90"/>
+<element name="LED1" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="9.675" rot="R180"/>
+<element name="LED2" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="3.325" rot="R180"/>
 <element name="JP2" library="cwpinhead" package="1X04/OFFSETDOWN" value="" x="31.28" y="6.5" rot="R270"/>
 <element name="J1" library="SparkFun-Connectors" package="USB-A-PCB" value="USBPCB" x="5.08" y="6.5"/>
 <element name="C3" library="resistor" package="E5-10,5" value="" x="39.37" y="33.42" rot="MR270"/>
@@ -2228,11 +2242,11 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <element name="PAD7" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="44.45" y="29.61"/>
 <element name="PAD8" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="44.45" y="32.15"/>
 <element name="R3" library="resistor" package="0207/7" value="" x="13.97" y="38.5" rot="R270"/>
-<element name="R4" library="resistor" package="0207/5V" value="" x="21.59" y="39.77" rot="R90"/>
+<element name="R4" library="resistor" package="0207/7" value="" x="23.495" y="38.5"/>
 <element name="C4" library="resistor" package="C1206" value="" x="13.97" y="37.865" rot="MR270"/>
-<element name="IC2" library="adafruit" package="TO92-INLINE" value="" x="17.78" y="38.5" rot="R90"/>
-<element name="LED3" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="41.675" rot="R270"/>
-<element name="LED4" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="35.325" rot="R270"/>
+<element name="IC2" library="adafruit" package="TO92-INLINE" value="" x="17.145" y="38.5" rot="R90"/>
+<element name="LED3" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="41.675" rot="R180"/>
+<element name="LED4" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="35.325" rot="R180"/>
 <element name="JP4" library="cwpinhead" package="1X04/OFFSETDOWN" value="" x="31.28" y="38.5" rot="R270"/>
 <element name="J2" library="SparkFun-Connectors" package="USB-A-PCB" value="USBPCB" x="5.08" y="38.5"/>
 <element name="C5" library="resistor" package="E5-10,5" value="" x="39.37" y="43.58" rot="MR270"/>
@@ -2250,11 +2264,11 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <element name="PAD11" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="41.81" y="15.42"/>
 <element name="PAD12" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="44.35" y="15.42"/>
 <element name="R5" library="resistor" package="0207/7" value="" x="13.97" y="20.5" rot="R270"/>
-<element name="R6" library="resistor" package="0207/5V" value="" x="21.59" y="21.77" rot="R90"/>
+<element name="R6" library="resistor" package="0207/7" value="" x="23.495" y="20.5"/>
 <element name="C7" library="resistor" package="C1206" value="" x="13.97" y="19.865" rot="MR270"/>
-<element name="IC3" library="adafruit" package="TO92-INLINE" value="" x="17.78" y="20.5" rot="R90"/>
-<element name="LED5" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="23.675" rot="R270"/>
-<element name="LED6" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="17.325" rot="R270"/>
+<element name="IC3" library="adafruit" package="TO92-INLINE" value="" x="17.145" y="20.5" rot="R90"/>
+<element name="LED5" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="23.675" rot="R180"/>
+<element name="LED6" library="cwpackage" package="LED3MM-MOREFLAT" value="" x="25.4" y="17.325" rot="R180"/>
 <element name="JP6" library="cwpinhead" package="1X04/OFFSETDOWN" value="" x="31.28" y="20.5" rot="R270"/>
 <element name="J3" library="SparkFun-Connectors" package="USB-A-PCB" value="USBPCB" x="5.08" y="20.5"/>
 <element name="U$8" library="cwlogo" package="CWLOGO-3" value="" x="18.27" y="16" rot="R90"/>
@@ -2272,6 +2286,9 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <element name="U$19" library="cwlogo" package="ON" value="" x="46.58" y="44.5" rot="R270"/>
 <element name="U$20" library="cwlogo" package="OFF" value="" x="46.58" y="32.5" rot="MR90"/>
 <element name="U$21" library="cwlogo" package="ON" value="" x="46.58" y="44.5" rot="MR90"/>
+<element name="D1" library="cwpackage" package="DO35Z6" value="BZX55/6" x="21.59" y="6.5" rot="R90"/>
+<element name="D2" library="cwpackage" package="DO35Z6" value="BZX55/6" x="21.59" y="20.5" rot="R90"/>
+<element name="D3" library="cwpackage" package="DO35Z6" value="BZX55/6" x="21.59" y="38.5" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2290,10 +2307,7 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="LED2" pad="K"/>
 <contactref element="JP2" pad="4"/>
 <wire x1="13.97" y1="2.69" x2="13.97" y2="4.465" width="1.27" layer="16"/>
-<wire x1="13.97" y1="4.465" x2="17.78" y2="4.341" width="1.27" layer="16"/>
-<wire x1="17.78" y1="4.341" x2="21.2725" y2="2.055" width="1.27" layer="16"/>
-<wire x1="21.2725" y1="2.055" x2="25.4" y2="2.055" width="1.27" layer="16"/>
-<wire x1="25.4" y1="2.055" x2="31.28" y2="2.69" width="1.27" layer="16"/>
+<wire x1="13.97" y1="4.465" x2="17.145" y2="4.341" width="1.27" layer="16"/>
 <wire x1="31.28" y1="2.69" x2="35.56" y2="2.69" width="0.127" layer="16"/>
 <polygon width="0.127" layer="16" thermals="no">
 <vertex x="30.58" y="3.25"/>
@@ -2301,6 +2315,12 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="35.58" y="2.25"/>
 <vertex x="30.58" y="2.25"/>
 </polygon>
+<wire x1="17.145" y1="4.341" x2="20.32" y2="1.166" width="1.27" layer="16"/>
+<wire x1="20.32" y1="1.166" x2="24.13" y2="1.166" width="1.27" layer="16"/>
+<wire x1="24.13" y1="1.166" x2="28.321" y2="1.166" width="1.27" layer="16"/>
+<wire x1="28.321" y1="1.166" x2="29.845" y2="2.69" width="1.27" layer="16"/>
+<wire x1="29.845" y1="2.69" x2="31.28" y2="2.69" width="1.27" layer="16"/>
+<wire x1="24.13" y1="3.325" x2="24.13" y2="1.166" width="1.016" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="C1" pad="+"/>
@@ -2321,11 +2341,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="IC1" pad="3"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP2" pad="2"/>
-<wire x1="17.78" y1="8.659" x2="20.701" y2="8.659" width="1.27" layer="16"/>
-<wire x1="20.701" y1="8.659" x2="24.765" y2="6.5" width="1.27" layer="16"/>
-<wire x1="24.765" y1="6.5" x2="26.67" y2="6.5" width="1.27" layer="16"/>
-<wire x1="26.67" y1="6.5" x2="29.21" y2="7.77" width="1.27" layer="16"/>
-<wire x1="29.21" y1="7.77" x2="31.28" y2="7.77" width="1.27" layer="16"/>
 <wire x1="31.28" y1="7.77" x2="31.28" y2="10.31" width="1.27" layer="16"/>
 <wire x1="31.28" y1="10.31" x2="35.56" y2="10.31" width="0.127" layer="16"/>
 <polygon width="0.127" layer="16" thermals="no">
@@ -2334,6 +2349,10 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="35.58" y="9.75"/>
 <vertex x="30.58" y="9.75"/>
 </polygon>
+<wire x1="17.145" y1="8.659" x2="20.32" y2="11.834" width="1.27" layer="16"/>
+<wire x1="20.32" y1="11.834" x2="28.321" y2="11.834" width="1.27" layer="16"/>
+<wire x1="28.321" y1="11.834" x2="29.845" y2="10.31" width="1.27" layer="16"/>
+<wire x1="29.845" y1="10.31" x2="31.28" y2="10.31" width="1.27" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="S1" pad="3"/>
@@ -2354,9 +2373,8 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="IC1" pad="2"/>
 <contactref element="R2" pad="1"/>
 <wire x1="13.97" y1="7.265" x2="16.51" y2="6.5" width="1.27" layer="16"/>
-<wire x1="16.51" y1="6.5" x2="17.78" y2="6.5" width="1.27" layer="16"/>
-<wire x1="17.78" y1="6.5" x2="20.32" y2="6.5" width="1.27" layer="16"/>
-<wire x1="20.32" y1="6.5" x2="21.59" y2="5.23" width="1.27" layer="16"/>
+<wire x1="16.51" y1="6.5" x2="17.145" y2="6.5" width="1.27" layer="16"/>
+<wire x1="17.145" y1="6.5" x2="19.685" y2="6.5" width="1.016" layer="16"/>
 <contactref element="J1" pad="5V"/>
 <wire x1="4.88" y1="3" x2="10.47" y2="3" width="1.27" layer="1"/>
 <wire x1="10.47" y1="3" x2="11.43" y2="3.96" width="1.27" layer="1"/>
@@ -2367,12 +2385,17 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <signal name="N$8">
 <contactref element="R2" pad="2"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="21.59" y1="10.31" x2="25.4" y2="10.945" width="1.27" layer="16"/>
+<wire x1="27.305" y1="6.5" x2="26.67" y2="9.675" width="1.016" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="LED1" pad="K"/>
 <contactref element="LED2" pad="A"/>
-<wire x1="25.4" y1="8.405" x2="25.4" y2="4.595" width="1.27" layer="1"/>
+<contactref element="D1" pad="C"/>
+<wire x1="21.59" y1="3.325" x2="21.59" y2="3.96" width="1.016" layer="16"/>
+<wire x1="21.59" y1="3.96" x2="24.13" y2="6.5" width="1.016" layer="16"/>
+<wire x1="24.13" y1="6.5" x2="26.67" y2="3.96" width="1.016" layer="16"/>
+<wire x1="26.67" y1="3.96" x2="26.67" y2="3.325" width="1.016" layer="16"/>
+<wire x1="24.13" y1="9.675" x2="24.13" y2="6.5" width="1.016" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="J1" pad="GND"/>
@@ -2380,6 +2403,10 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="4.88" y1="10" x2="11.12" y2="10" width="1.27" layer="1"/>
 <wire x1="11.12" y1="10" x2="11.43" y2="10.31" width="1.27" layer="1"/>
 <wire x1="11.43" y1="10.31" x2="13.97" y2="10.31" width="1.27" layer="1"/>
+<contactref element="D1" pad="A"/>
+<wire x1="18.415" y1="10.437" x2="21.59" y2="9.675" width="1.016" layer="1"/>
+<wire x1="18.415" y1="10.437" x2="13.97" y2="10.437" width="1.016" layer="1"/>
+<wire x1="13.97" y1="10.437" x2="13.97" y2="10.31" width="1.016" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="S1" pad="1"/>
@@ -2401,10 +2428,7 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="LED4" pad="K"/>
 <contactref element="JP4" pad="4"/>
 <wire x1="13.97" y1="34.69" x2="13.97" y2="36.465" width="1.27" layer="16"/>
-<wire x1="13.97" y1="36.465" x2="17.78" y2="36.341" width="1.27" layer="16"/>
-<wire x1="17.78" y1="36.341" x2="21.2725" y2="34.055" width="1.27" layer="16"/>
-<wire x1="21.2725" y1="34.055" x2="25.4" y2="34.055" width="1.27" layer="16"/>
-<wire x1="25.4" y1="34.055" x2="31.28" y2="34.69" width="1.27" layer="16"/>
+<wire x1="13.97" y1="36.465" x2="17.145" y2="36.341" width="1.27" layer="16"/>
 <wire x1="31.28" y1="34.69" x2="35.56" y2="34.69" width="0.127" layer="16"/>
 <contactref element="C5" pad="-"/>
 <wire x1="35.56" y1="34.69" x2="39.37" y2="30.88" width="1.6764" layer="1"/>
@@ -2420,6 +2444,12 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="35.58" y="34.25"/>
 <vertex x="30.58" y="34.25"/>
 </polygon>
+<wire x1="17.145" y1="36.341" x2="20.32" y2="33.166" width="1.27" layer="16"/>
+<wire x1="20.32" y1="33.166" x2="24.13" y2="33.166" width="1.27" layer="16"/>
+<wire x1="24.13" y1="33.166" x2="28.321" y2="33.166" width="1.27" layer="16"/>
+<wire x1="28.321" y1="33.166" x2="29.845" y2="34.69" width="1.27" layer="16"/>
+<wire x1="29.845" y1="34.69" x2="31.28" y2="34.69" width="1.27" layer="16"/>
+<wire x1="24.13" y1="35.325" x2="24.13" y2="33.166" width="1.016" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="C3" pad="+"/>
@@ -2435,11 +2465,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="IC2" pad="3"/>
 <contactref element="JP4" pad="1"/>
 <contactref element="JP4" pad="2"/>
-<wire x1="17.78" y1="40.659" x2="20.701" y2="40.659" width="1.27" layer="16"/>
-<wire x1="20.701" y1="40.659" x2="24.765" y2="38.5" width="1.27" layer="16"/>
-<wire x1="24.765" y1="38.5" x2="26.67" y2="38.5" width="1.27" layer="16"/>
-<wire x1="26.67" y1="38.5" x2="29.21" y2="39.77" width="1.27" layer="16"/>
-<wire x1="29.21" y1="39.77" x2="31.28" y2="39.77" width="1.27" layer="16"/>
 <wire x1="31.28" y1="39.77" x2="31.28" y2="42.31" width="1.27" layer="16"/>
 <wire x1="31.28" y1="42.31" x2="35.56" y2="42.31" width="0.127" layer="16"/>
 <contactref element="C5" pad="+"/>
@@ -2454,6 +2479,10 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="35.58" y="41.75"/>
 <vertex x="30.58" y="41.75"/>
 </polygon>
+<wire x1="17.145" y1="40.659" x2="20.32" y2="43.834" width="1.27" layer="16"/>
+<wire x1="20.32" y1="43.834" x2="28.321" y2="43.834" width="1.27" layer="16"/>
+<wire x1="28.321" y1="43.834" x2="29.845" y2="42.31" width="1.27" layer="16"/>
+<wire x1="29.845" y1="42.31" x2="31.28" y2="42.31" width="1.27" layer="16"/>
 </signal>
 <signal name="N$13">
 <contactref element="S2" pad="3"/>
@@ -2474,9 +2503,8 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="IC2" pad="2"/>
 <contactref element="R4" pad="1"/>
 <wire x1="13.97" y1="39.265" x2="16.51" y2="38.5" width="1.27" layer="16"/>
-<wire x1="16.51" y1="38.5" x2="17.78" y2="38.5" width="1.27" layer="16"/>
-<wire x1="17.78" y1="38.5" x2="20.32" y2="38.5" width="1.27" layer="16"/>
-<wire x1="20.32" y1="38.5" x2="21.59" y2="37.23" width="1.27" layer="16"/>
+<wire x1="16.51" y1="38.5" x2="17.145" y2="38.5" width="1.27" layer="16"/>
+<wire x1="17.145" y1="38.5" x2="19.685" y2="38.5" width="1.016" layer="16"/>
 <contactref element="J2" pad="5V"/>
 <wire x1="4.88" y1="35" x2="10.47" y2="35" width="1.27" layer="1"/>
 <wire x1="10.47" y1="35" x2="11.43" y2="35.96" width="1.27" layer="1"/>
@@ -2487,12 +2515,17 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <signal name="N$18">
 <contactref element="R4" pad="2"/>
 <contactref element="LED3" pad="A"/>
-<wire x1="21.59" y1="42.31" x2="25.4" y2="42.945" width="1.27" layer="16"/>
+<wire x1="27.305" y1="38.5" x2="26.67" y2="41.675" width="1.016" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="LED3" pad="K"/>
 <contactref element="LED4" pad="A"/>
-<wire x1="25.4" y1="40.405" x2="25.4" y2="36.595" width="1.27" layer="1"/>
+<contactref element="D3" pad="C"/>
+<wire x1="21.59" y1="35.325" x2="21.59" y2="35.96" width="1.016" layer="16"/>
+<wire x1="21.59" y1="35.96" x2="24.13" y2="38.5" width="1.016" layer="16"/>
+<wire x1="24.13" y1="38.5" x2="24.13" y2="41.675" width="1.016" layer="16"/>
+<wire x1="26.67" y1="35.325" x2="26.67" y2="35.96" width="1.016" layer="16"/>
+<wire x1="26.67" y1="35.96" x2="24.13" y2="38.5" width="1.016" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="J2" pad="GND"/>
@@ -2500,6 +2533,10 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="4.88" y1="42" x2="11.12" y2="42" width="1.27" layer="1"/>
 <wire x1="11.12" y1="42" x2="11.43" y2="42.31" width="1.27" layer="1"/>
 <wire x1="11.43" y1="42.31" x2="13.97" y2="42.31" width="1.27" layer="1"/>
+<contactref element="D3" pad="A"/>
+<wire x1="13.97" y1="42.31" x2="13.97" y2="42.437" width="1.016" layer="1"/>
+<wire x1="13.97" y1="42.437" x2="18.415" y2="42.437" width="1.016" layer="1"/>
+<wire x1="18.415" y1="42.437" x2="21.59" y2="41.675" width="1.016" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="S2" pad="1"/>
@@ -2526,10 +2563,7 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="LED6" pad="K"/>
 <contactref element="JP6" pad="4"/>
 <wire x1="13.97" y1="16.69" x2="13.97" y2="18.465" width="1.27" layer="16"/>
-<wire x1="13.97" y1="18.465" x2="17.78" y2="18.341" width="1.27" layer="16"/>
-<wire x1="17.78" y1="18.341" x2="21.2725" y2="16.055" width="1.27" layer="16"/>
-<wire x1="21.2725" y1="16.055" x2="25.4" y2="16.055" width="1.27" layer="16"/>
-<wire x1="25.4" y1="16.055" x2="31.28" y2="16.69" width="1.27" layer="16"/>
+<wire x1="13.97" y1="18.465" x2="17.145" y2="18.341" width="1.27" layer="16"/>
 <wire x1="31.28" y1="16.69" x2="35.56" y2="16.69" width="0.127" layer="16"/>
 <polygon width="0.127" layer="16" thermals="no">
 <vertex x="30.58" y="17.25"/>
@@ -2537,6 +2571,12 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="35.58" y="16.25"/>
 <vertex x="30.58" y="16.25"/>
 </polygon>
+<wire x1="17.145" y1="18.341" x2="20.32" y2="15.166" width="1.27" layer="16"/>
+<wire x1="24.13" y1="15.166" x2="28.321" y2="15.166" width="1.27" layer="16"/>
+<wire x1="28.321" y1="15.166" x2="29.845" y2="16.69" width="1.27" layer="16"/>
+<wire x1="29.845" y1="16.69" x2="31.28" y2="16.69" width="1.27" layer="16"/>
+<wire x1="24.13" y1="17.325" x2="24.13" y2="15.166" width="1.016" layer="16"/>
+<wire x1="20.32" y1="15.166" x2="24.13" y2="15.166" width="1.27" layer="16"/>
 </signal>
 <signal name="N$22">
 <contactref element="C6" pad="+"/>
@@ -2557,11 +2597,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="IC3" pad="3"/>
 <contactref element="JP6" pad="1"/>
 <contactref element="JP6" pad="2"/>
-<wire x1="17.78" y1="22.659" x2="20.701" y2="22.659" width="1.27" layer="16"/>
-<wire x1="20.701" y1="22.659" x2="24.765" y2="20.5" width="1.27" layer="16"/>
-<wire x1="24.765" y1="20.5" x2="26.67" y2="20.5" width="1.27" layer="16"/>
-<wire x1="26.67" y1="20.5" x2="29.21" y2="21.77" width="1.27" layer="16"/>
-<wire x1="29.21" y1="21.77" x2="31.28" y2="21.77" width="1.27" layer="16"/>
 <wire x1="31.28" y1="21.77" x2="31.28" y2="24.31" width="1.27" layer="16"/>
 <wire x1="31.28" y1="24.31" x2="35.56" y2="24.31" width="0.127" layer="16"/>
 <polygon width="0.127" layer="16" thermals="no">
@@ -2570,6 +2605,10 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="35.58" y="23.75"/>
 <vertex x="30.58" y="23.75"/>
 </polygon>
+<wire x1="17.145" y1="22.659" x2="20.32" y2="25.834" width="1.27" layer="16"/>
+<wire x1="20.32" y1="25.834" x2="28.321" y2="25.834" width="1.27" layer="16"/>
+<wire x1="28.321" y1="25.834" x2="29.845" y2="24.31" width="1.27" layer="16"/>
+<wire x1="29.845" y1="24.31" x2="31.28" y2="24.31" width="1.27" layer="16"/>
 </signal>
 <signal name="N$23">
 <contactref element="S3" pad="3"/>
@@ -2590,25 +2629,29 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <contactref element="IC3" pad="2"/>
 <contactref element="R6" pad="1"/>
 <wire x1="13.97" y1="21.265" x2="16.51" y2="20.5" width="1.27" layer="16"/>
-<wire x1="16.51" y1="20.5" x2="17.78" y2="20.5" width="1.27" layer="16"/>
-<wire x1="17.78" y1="20.5" x2="20.32" y2="20.5" width="1.27" layer="16"/>
-<wire x1="20.32" y1="20.5" x2="21.59" y2="19.23" width="1.27" layer="16"/>
+<wire x1="16.51" y1="20.5" x2="17.145" y2="20.5" width="1.27" layer="16"/>
 <contactref element="J3" pad="5V"/>
 <wire x1="4.88" y1="17" x2="10.47" y2="17" width="1.27" layer="1"/>
 <wire x1="10.47" y1="17" x2="11.43" y2="17.96" width="1.27" layer="1"/>
 <via x="11.43" y="17.96" extent="1-16" drill="0.8" diameter="1.27" shape="octagon"/>
 <wire x1="11.43" y1="17.96" x2="11.43" y2="21.135" width="1.27" layer="16"/>
 <wire x1="11.43" y1="21.135" x2="13.97" y2="21.265" width="1.27" layer="16"/>
+<wire x1="17.145" y1="20.5" x2="19.685" y2="20.5" width="1.016" layer="16"/>
 </signal>
 <signal name="N$28">
 <contactref element="R6" pad="2"/>
 <contactref element="LED5" pad="A"/>
-<wire x1="21.59" y1="24.31" x2="25.4" y2="24.945" width="1.27" layer="16"/>
+<wire x1="27.305" y1="20.5" x2="26.67" y2="23.675" width="1.016" layer="16"/>
 </signal>
 <signal name="N$29">
 <contactref element="LED5" pad="K"/>
 <contactref element="LED6" pad="A"/>
-<wire x1="25.4" y1="22.405" x2="25.4" y2="18.595" width="1.27" layer="1"/>
+<contactref element="D2" pad="C"/>
+<wire x1="21.59" y1="17.325" x2="21.59" y2="17.96" width="1.016" layer="16"/>
+<wire x1="21.59" y1="17.96" x2="24.13" y2="20.5" width="1.016" layer="16"/>
+<wire x1="24.13" y1="20.5" x2="26.67" y2="17.96" width="1.016" layer="16"/>
+<wire x1="26.67" y1="17.96" x2="26.67" y2="17.325" width="1.016" layer="16"/>
+<wire x1="24.13" y1="23.675" x2="24.13" y2="20.5" width="1.016" layer="16"/>
 </signal>
 <signal name="N$24">
 <contactref element="J3" pad="GND"/>
@@ -2616,6 +2659,10 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="4.88" y1="24" x2="11.12" y2="24" width="1.27" layer="1"/>
 <wire x1="11.12" y1="24" x2="11.43" y2="24.31" width="1.27" layer="1"/>
 <wire x1="11.43" y1="24.31" x2="13.97" y2="24.31" width="1.27" layer="1"/>
+<contactref element="D2" pad="A"/>
+<wire x1="18.415" y1="24.437" x2="21.59" y2="23.675" width="1.016" layer="1"/>
+<wire x1="18.415" y1="24.437" x2="13.97" y2="24.437" width="1.016" layer="1"/>
+<wire x1="13.97" y1="24.437" x2="13.97" y2="24.31" width="1.016" layer="1"/>
 </signal>
 <signal name="N$30">
 <contactref element="S3" pad="1"/>

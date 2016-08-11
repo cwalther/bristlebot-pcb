@@ -12383,6 +12383,62 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DO35Z6">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 6.35mm</description>
+<wire x1="3.175" y1="0" x2="2.286" y2="0" width="0.508" layer="51"/>
+<wire x1="-3.175" y1="0" x2="-2.286" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-3.175" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="A" x="3.175" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="-2.286" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+</package>
+<package name="DO35Z7">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 7.62mm</description>
+<wire x1="3.81" y1="0" x2="2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="A" x="3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="-2.286" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
+<rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -12409,6 +12465,18 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="ZD">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-1.778" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12503,6 +12571,32 @@ Source: www.kingbright.com</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="BZX55" prefix="D">
+<description>&lt;b&gt;Z DIODE&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="ZD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="/7" package="DO35Z7">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/6" package="DO35Z6">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -12524,7 +12618,7 @@ Source: www.kingbright.com</description>
 <part name="PAD3" library="wirepad" deviceset="WIREPAD" device="2,15/1,0"/>
 <part name="PAD4" library="wirepad" deviceset="WIREPAD" device="2,15/1,0"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/7"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0207/5V"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0207/7"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C1206"/>
 <part name="IC1" library="adafruit" deviceset="MCP1700" device="INLINE"/>
 <part name="LED1" library="cwpackage" deviceset="LED" device="3MM-MOREFLAT"/>
@@ -12539,7 +12633,7 @@ Source: www.kingbright.com</description>
 <part name="PAD7" library="wirepad" deviceset="WIREPAD" device="2,15/1,0"/>
 <part name="PAD8" library="wirepad" deviceset="WIREPAD" device="2,15/1,0"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0207/7"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="0207/5V"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0207/7"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C1206"/>
 <part name="IC2" library="adafruit" deviceset="MCP1700" device="INLINE"/>
 <part name="LED3" library="cwpackage" deviceset="LED" device="3MM-MOREFLAT"/>
@@ -12555,13 +12649,16 @@ Source: www.kingbright.com</description>
 <part name="PAD11" library="wirepad" deviceset="WIREPAD" device="2,15/1,0"/>
 <part name="PAD12" library="wirepad" deviceset="WIREPAD" device="2,15/1,0"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="0207/7"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="0207/5V"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="0207/7"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C1206"/>
 <part name="IC3" library="adafruit" deviceset="MCP1700" device="INLINE"/>
 <part name="LED5" library="cwpackage" deviceset="LED" device="3MM-MOREFLAT"/>
 <part name="LED6" library="cwpackage" deviceset="LED" device="3MM-MOREFLAT"/>
 <part name="JP6" library="cwpinhead" deviceset="PINHD-1X4" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="USB" device="PCB"/>
+<part name="D1" library="cwpackage" deviceset="BZX55" device="/6"/>
+<part name="D2" library="cwpackage" deviceset="BZX55" device="/6"/>
+<part name="D3" library="cwpackage" deviceset="BZX55" device="/6"/>
 </parts>
 <sheets>
 <sheet>
@@ -12614,6 +12711,9 @@ Source: www.kingbright.com</description>
 <instance part="LED6" gate="G$1" x="53.34" y="63.5"/>
 <instance part="JP6" gate="A" x="71.12" y="60.96"/>
 <instance part="J3" gate="G$1" x="10.16" y="68.58" rot="R180"/>
+<instance part="D1" gate="1" x="43.18" y="22.86"/>
+<instance part="D2" gate="1" x="43.18" y="71.12"/>
+<instance part="D3" gate="1" x="43.18" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -12701,6 +12801,11 @@ Source: www.kingbright.com</description>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="53.34" y1="17.78" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="45.72" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="22.86" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="20.32" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
+<junction x="53.34" y="20.32"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12708,6 +12813,10 @@ Source: www.kingbright.com</description>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="40.64" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="22.86" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
+<junction x="17.78" y="20.32"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -12805,6 +12914,11 @@ Source: www.kingbright.com</description>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="53.34" y1="116.84" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D3" gate="1" pin="C"/>
+<wire x1="45.72" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="121.92" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
+<junction x="53.34" y="119.38"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -12812,6 +12926,10 @@ Source: www.kingbright.com</description>
 <pinref part="J2" gate="G$1" pin="GND"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D3" gate="1" pin="A"/>
+<wire x1="40.64" y1="121.92" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="121.92" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<junction x="17.78" y="119.38"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -12903,6 +13021,11 @@ Source: www.kingbright.com</description>
 <pinref part="LED5" gate="G$1" pin="C"/>
 <pinref part="LED6" gate="G$1" pin="A"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="45.72" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="71.12" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+<junction x="53.34" y="68.58"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -12910,6 +13033,10 @@ Source: www.kingbright.com</description>
 <pinref part="J3" gate="G$1" pin="GND"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="68.58" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="40.64" y1="71.12" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="71.12" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<junction x="17.78" y="68.58"/>
 </segment>
 </net>
 <net name="N$30" class="0">
